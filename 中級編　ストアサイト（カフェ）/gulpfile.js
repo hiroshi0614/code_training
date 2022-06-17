@@ -6,13 +6,13 @@ const sass = require("gulp-sass")(require("sass"));
 // style.scssの監視タスクを作成する
 gulp.task("default", function() {
   // ★ style.scssファイルを監視
-  return gulp.watch("scss/style.scss", function() {
+  return gulp.watch("./src/scss/**/*.scss", function() {
     // style.scssの更新があった場合の処理
 
     // style.scssファイルを取得
     return (
       gulp
-        .src("scss/style.scss")
+        .src("./src/scss/**/*.scss")
         // Sassのコンパイルを実行
         .pipe(
           sass({
@@ -23,7 +23,7 @@ gulp.task("default", function() {
             .on("error", sass.logError)
         )
         // cssフォルダー以下に保存
-        .pipe(gulp.dest("css"))
+        .pipe(gulp.dest("./src/css"))
     );
   });
 });
