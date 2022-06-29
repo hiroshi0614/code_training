@@ -180,14 +180,14 @@ a {
   justify-content: space-around;
 }
 .menu__list dd {
-  text-align: left;
-  width: 87%;
-  border-bottom: 1.5px dotted #000;
+  text-align: right;
+  width: 13%;
   margin-bottom: 25px;
 }
 .menu__list dt {
-  text-align: right;
-  width: 13%;
+  text-align: left;
+  width: 87%;
+  border-bottom: 1.5px dotted #000;
   margin-bottom: 25px;
 }
 
