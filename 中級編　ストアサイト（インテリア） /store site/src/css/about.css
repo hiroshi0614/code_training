@@ -1,0 +1,54 @@
+/*--- main ------------*/
+.subtitle {
+  font-size: 1.4rem;
+}
+.subtitle h2 {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+.top {
+  padding-top: 120px;
+}
+
+.about__wrap {
+  max-width: 600px;
+}
+.about__wrap p {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  line-height: 1.9;
+}
+
+/*--- footer ----------*/
+footer {
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  bottom: -320px;
+  left: 0;
+  right: 0;
+}
+@media screen and (max-width: 900px) {
+  .footer {
+    bottom: -190px;
+  }
+}
+.footer p {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 900px) {
+  .footer p {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sns {
+    margin-bottom: 5px;
+  }
+}
