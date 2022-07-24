@@ -273,7 +273,6 @@ a {
 .mainVisual {
   display: flex;
   position: relative;
-  height: 720px;
   flex-direction: row-reverse;
   overflow: hidden;
 }
@@ -289,8 +288,6 @@ a {
   top: 280px;
   font-size: 4.6rem;
   font-weight: bold;
-  height: 720px;
-  width: 436px;
 }
 .mainVisual__text p {
   margin-bottom: 30px;
@@ -388,7 +385,6 @@ a {
 
 /*--- cause ---------*/
 .cause {
-  text-align: center;
   margin-top: 120px;
   position: relative;
   z-index: -3;
@@ -396,21 +392,17 @@ a {
 
 .cause__container {
   background-color: #FF2A2A;
-  height: 650px;
-  position: relative;
-}
-@media screen and (max-width: 900px) {
-  .cause__container {
-    height: 350px;
-  }
+  padding: 80px 0;
 }
 
 .cause__wrap {
-  padding: 76px 165px;
+  padding: 5%;
   background-color: #fff;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 2.8rem;
+  width: 50%;
 }
 @media screen and (max-width: 900px) {
   .cause__wrap {
@@ -421,50 +413,39 @@ a {
 
 .cause__img__pc {
   width: 87px;
-  height: 60px;
   margin-right: 30px;
 }
 
 .cause__img__man {
   width: 51px;
-  height: 69px;
   margin-right: 30px;
 }
 
-.cause__text {
+.cause__title {
   font-size: 2.8rem;
-  text-align-last: left;
   color: #FF2A2A;
   font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 900px) {
-  .cause__text {
+  .cause__title {
     font-size: 2.4rem;
   }
 }
-.cause__text p + p {
+
+.cause__text {
   font-size: 1.8rem;
   color: #333;
   font-weight: normal;
-}
-@media screen and (max-width: 900px) {
-  .cause__text p + p {
-    font-size: 1.4rem;
-  }
+  display: block;
 }
 
 .cause__wrap__left {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  position: absolute;
-  top: 80px;
-  left: 0;
   opacity: 0;
-}
-@media screen and (max-width: 900px) {
-  .cause__wrap__left {
-    top: 40px;
-  }
+  margin-bottom: 40px;
 }
 
 .left__active {
@@ -483,16 +464,7 @@ a {
 .cause__wrap__right {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  position: absolute;
-  bottom: 80px;
-  right: 0;
-  transition: ease 0.9s 0.1s;
   opacity: 0;
-}
-@media screen and (max-width: 900px) {
-  .cause__wrap__right {
-    bottom: 40px;
-  }
 }
 
 .right__active {
@@ -501,11 +473,25 @@ a {
 
 @keyframes cause__active__right {
   0% {
-    transform: translateX(50%);
+    transform: translateX(150%);
   }
   100% {
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateX(100%);
+  }
+}
+@media screen and (max-width: 900px) {
+  .right__active {
+    animation: cause__active__right 0.7s ease-out 0s 1 forwards;
+  }
+  @keyframes cause__active__right {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(16px);
+    }
   }
 }
 /*--- voice ----------*/
@@ -546,12 +532,18 @@ a {
   }
 }
 .voice__img {
+  font-size: 1.2rem;
+}
+.voice__img img {
   width: 120px;
   height: 120px;
   background-color: #ccc;
   border-radius: 50%;
+  margin-bottom: 10px;
+}
+.voice__img p {
   text-align: center;
-  font-size: 1.2rem;
+  line-height: 2;
 }
 
 .voice__text {
@@ -563,6 +555,7 @@ a {
   background-color: #E9F1FB;
   border-radius: 15px;
   position: relative;
+  line-height: 2;
 }
 @media screen and (max-width: 900px) {
   .voice__text {
@@ -596,6 +589,7 @@ a {
   display: flex;
   flex-direction: row-reverse;
   opacity: 0;
+  line-height: 2;
 }
 @media screen and (max-width: 900px) {
   .voice__container__right {
@@ -758,21 +752,22 @@ a {
     font-size: 2.5rem;
   }
 }
-.experience__title span {
+
+.experience__text {
   display: block;
   font-size: 1.8rem;
   font-weight: normal;
   margin-top: 5px;
 }
 @media screen and (max-width: 900px) {
-  .experience__title span {
+  .experience__text {
     font-size: 1.6rem;
   }
 }
 
 .experience__btn {
   margin-top: 40px;
-  padding: 15px 203px;
+  padding: 15px;
   background-color: #FF2A2A;
   border-radius: 40px;
   display: block;
