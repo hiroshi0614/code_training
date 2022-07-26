@@ -230,7 +230,7 @@ header {
 }
 
 /*--- クリック後のスタイル　--------*/
-.nav__sp.active {
+.nav.active {
   position: fixed;
   left: 0;
   top: 0;
@@ -602,6 +602,7 @@ header {
 .contact__item p {
   font-size: 1.4em;
   margin-top: 5px;
+  color: #121212;
 }
 
 /*--- footer ---------*/

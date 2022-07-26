@@ -248,7 +248,7 @@ header {
 
 /*--- クリック後のスタイル　--------*/
 
-.nav__sp.active {
+.nav.active {
   position: fixed;
   left: 0;
   top: 0;
@@ -632,6 +632,7 @@ padding: 120px 0 145px 0;
   p {
     font-size: 1.4em;
     margin-top: 5px;
+    color: #121212
   }
 }
 
