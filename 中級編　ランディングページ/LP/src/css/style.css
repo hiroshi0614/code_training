@@ -7,7 +7,6 @@
 
 body {
   font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
-  max-width: 1440px;
 }
 
 img {
@@ -70,6 +69,7 @@ a {
 /*--- header --------*/
 .header {
   margin: 40px 50px 0 50px;
+  position: relative;
 }
 @media screen and (max-width: 900px) {
   .header {
@@ -363,6 +363,7 @@ a {
 }
 .slide__items li img {
   max-width: 100%;
+  width: 100%;
   object-fit: cover;
   height: 720px;
 }
@@ -779,7 +780,6 @@ a {
 }
 @media screen and (max-width: 900px) {
   .experience__btn {
-    padding: 15px 54px;
     font-size: 2.4rem;
   }
 }
