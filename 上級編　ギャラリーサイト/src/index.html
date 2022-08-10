@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.ico" id="favicon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="css/sanitize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>FA EXHIBITTON</title>
+</head>
+<body>
+<!--- header ---------->
+  <header id="top">
+    <div id="logo">
+      <a href="href"><img src="img/logo.svg" alt="ロゴ画像"></a>
+    </div>
+
+<!--- ハンバーガーメニュー　---------->
+
+    <nav class="nav" id="js__nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#top" class="scroll">top</a></li>
+        <li class="nav__item"><a href="#info" class="scroll">information</a></li>
+        <li class="nav__item"><a href="#gallery" class="scroll">gallery</a></li>
+        <li class="nav__item"><a href="#access" class="scroll">access</a></li>
+        <li class="nav__item"><a href="#contact" class="scroll">contact</a></li>
+      </ul>
+    </nav>
+
+      <div class="hamburger" id="js__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  </header>
+
+<!--- main ----------> 
+  <main>
+
+      <div class="mainVisual">
+        <img class="mainVisual__img" src="img/mainvisual1.jpg" alt="花の画像">
+        <img class="mainVisual__img" src="img/mainvisual2.jpg" alt="花の画像">
+        <img class="mainVisual__img" src="img/mainvisual3.jpg" alt="花の画像">
+      </div>
+
+      <div class="container">
+
+      <h1 class="title fadein">
+        <span>hello</span> <span>flower!</span><br>
+        FA exhibition 2021
+      </h1>
+
+<!--- INFORMATION ---------->
+      <section id="info">
+        <h2 class="subtitle fadein">information</h2>
+
+        <p class="info__text fadein">
+          <span>2021 JUL 1(THU)-3(SAT)</span><br>
+          Day1 10am-6pm OTHER 10am-5:30pm
+        </p>
+
+        <p class="info__text__bold fadein">
+          at PARK SIDE HALL
+        </p>
+
+        <p class="info__text fadein">
+          2021年7月1日(木)ー3日(土)<br>
+          Day1 10時〜18時　その他 10時〜17時30分
+        </p>
+
+      </section>
+
+<!--- sidebar ---------->
+
+      <div class="sidebar">
+        <a href="#">for visitor</a>
+        <a href="#">for exhibitor</a>
+      </div>
+
+<!--- GALLERY --------->
+      <section id="gallery">
+        <h2 class="subtitle fadein">gallery</h2>
+
+          <ul class="gallery__list">
+            <li class="gallery__item fadein"><img src="img/flower1.jpg" alt="花の画像"></li>
+            <li class="gallery__item fadein"><img src="img/flower2.jpg" alt="花の画像"></li>
+            <li class="gallery__item fadein"><img src="img/flower3.jpg" alt="花の画像"></li>
+            <li class="gallery__item fadein"><img src="img/flower4.jpg" alt="花の画像"></li>
+            <li class="gallery__item fadein"><img src="img/flower5.jpg" alt="花の画像"></li>
+            <li class="gallery__item fadein"><img src="img/flower6.jpg" alt="花の画像"></li>
+          </ul>
+
+      </section>
+
+<!--- access ---------->
+      <section id="access">
+        <h2 class="subtitle">access</h2>
+
+        <p class="access__title">park side hall</p>
+        <p class="access__text">
+          〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL<br>
+          PARK SIDE HALL, 1-1-1 Jiyugaoka, Meguro-ku, Tokyo
+        </p>
+        <p class="access__text">
+          Tel: 03-1111-1111<br>
+          E-mail: info@xxxxxxx.jp
+        </p>
+
+        <a href="" class="map">google map</a>
+
+      </section>
+
+<!--- 背景 --------->
+      <div class="bg"></div>
+<!--- contact ---------->
+      <section id="contact">
+        <h2 class="subtitle">contact</h2>
+
+        <a href="#" class="contact__item">出展に関するお問い合わせ</a>
+        <a href="#" class="contact__item">その他のお問い合わせ</a>
+      </section>
+
+    </div><!--- /.container-->
+  </main>
+
+<!--- footer ---------->
+  <footer class="footer">
+    <p class="footer__text">FA EXHIBITION</p>
+    <p>〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL</p>
+    <p>
+      Tel: 03-1111-1111<br>
+      E-mail: info@xxxxxxx.jp
+    </p>
+
+    <div class="footer__flex">
+      <ul class="sns">
+        <li><a href="">twitter</a></li>
+        <li><a href="">facebook</a></li>
+        <li><a href="">instagram</a></li>
+      </ul>
+
+      <div class="copyright">
+        <p>privacy policy</p>
+        <p>© FA EXHIBITION</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
