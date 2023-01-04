@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*--- header ---------*/
+@import "header.scss";
+
+/*--- common --------*/
+@import "common.scss";
+
+.column1__wrap {
+  padding-bottom: 0;
+}
+
+.privacy__wrap {
+  padding: 30px;
+  letter-spacing: 1px;
+
+  @media screen and (max-width: 750px) {
+    padding: 15px;
+    letter-spacing: 1.5px;
+  }
+}
+
+.privacy__item {
+  margin-top: 30px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.privacy__title {
+  font-size: 3rem;
+
+  @media screen and (max-width: 750px) {
+    font-size: 1.8rem;
+  }
+}
+
+.privacy__text {
+  font-size: 1.6rem;
+  margin-top: 20px;
+
+  @media screen and (max-width: 750px) {
+    font-size: 1.4rem;
+    margin-top: 10px;
+  }
+}
+
+
+
+@import "footer.scss";

@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/*--- header ---------*/
+@import "header.scss";
+
+/*--- common --------*/
+@import "common.scss";
+
+.none__article__wrap {
+  font-size: 1.6rem;
+  padding: 50px 10px 30px 10px;
+  letter-spacing: 1px;
+}
+/*--- aside -------*/
+@import "aside.scss";
+
+/*--- footer --------*/
+@import "footer.scss";

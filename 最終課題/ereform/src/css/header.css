@@ -1,16 +1,23 @@
 @charset "UTF-8";
+/*--- color ---------*/
 .header {
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   background-color: #fff;
   z-index: 10;
 }
 
 .header__top__inner {
-  padding: 10px 10px 10px 30px;
+  padding: 15px 15px 15px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 750px) {
+  .header__top__inner {
+    padding: 10px;
+  }
 }
 
 .header__left {
@@ -26,6 +33,9 @@
 .header__left p span {
   font-size: 2.1rem;
 }
+.header__left h1 {
+  margin: 0;
+}
 
 @media screen and (max-width: 750px) {
   .logo {
@@ -36,16 +46,27 @@
 
 .store {
   margin-left: 30px;
+  transition: all 0.3s;
 }
 @media screen and (max-width: 750px) {
   .store {
     display: none;
   }
 }
+.store:hover {
+  opacity: 0.7;
+}
 
 .header__right {
   display: flex;
   align-items: center;
+}
+
+.reception {
+  transition: all 0.3s;
+}
+.reception:hover {
+  opacity: 0.7;
 }
 
 .web-24hour {

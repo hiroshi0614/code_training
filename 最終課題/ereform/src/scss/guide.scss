@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+/*--- header ---------*/
+@import "header.scss";
+
+/*--- common --------*/
+@import "common.scss";
+
+.guide__list {
+  margin: 40px 50px;
+
+  @media screen and (max-width: 750px) {
+    margin: 20px 10px;
+  }
+}
+
+.guide__text__wrap {
+  display: flex;
+
+  @media screen and (max-width: 750px) {
+    margin: 20px 10px;
+  }
+}
+
+.guide__text__body {
+  width: 85%;
+  margin-right: 25px;
+  margin-left: 28px;
+  letter-spacing: 2px;
+
+  @media screen and (max-width: 750px) {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+}
+
+.guide__number__item {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border: $color-green 3px solid;
+  background-color: $color-white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 90px;
+  position: relative;
+  font-size: 4rem;
+  color: $color-green;
+  font-family: 'Roboto';
+  font-weight: bold;
+
+  @media screen and (max-width: 750px) {
+    width: 65px;
+    height: 65px;
+    line-height: 58px;
+    font-size: 2rem;
+  }
+
+  &::after {
+    content: "";
+    width: 1px;
+    background-color: $color-green;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}
+
+/*--- 利用の流れ 余白 --------*/
+
+.guide__number1 {
+  margin-bottom: 60px;
+
+  &::after {
+    height: 64px;
+    bottom: -64px;
+
+    @media screen and (max-width: 750px) {
+      height: 85px;
+      bottom: -85px;
+    }
+  }
+}
+
+.guide__number2 {
+  margin-bottom: 60px;
+
+  @media screen and (max-width: 750px) {
+    margin-bottom: 180px;
+  }
+
+  &::after {
+    height: 64px;
+    bottom: -64px;
+
+    @media screen and (max-width: 750px) {
+      height: 205px;
+      bottom: -205px;
+    }
+  }
+}
+
+.guide__number3 {
+  margin-bottom: 60px;
+
+  &::after {
+    height: 64px;
+    bottom: -64px;
+
+    @media screen and (max-width: 750px) {
+      height: 85px;
+      bottom: -85px;
+    }
+  }
+}
+
+.guide__number4 {
+  margin-bottom: 60px;
+
+  @media screen and (max-width: 750px) {
+    margin-bottom: 130px;
+  }
+
+  &::after {
+    height: 64px;
+    bottom: -64px;
+
+    @media screen and (max-width: 750px) {
+      height: 155px;
+      bottom: -155px;
+    }
+  }
+}
+
+.guide__number5 {
+  margin-bottom: 60px;
+
+  @media screen and (max-width: 750px) {
+    margin-bottom: 140px;
+  }
+
+  &::after {
+    height: 64px;
+    bottom: -64px;
+
+    @media screen and (max-width: 750px) {
+      height: 165px;
+      bottom: -165px;
+    }
+  }
+}
+
+.guide__number6 {
+  margin-bottom: 60px;
+
+  &::after {
+    height: 64px;
+    bottom: -64px;
+
+    @media screen and (max-width: 750px) {
+      height: 85px;
+      bottom: -85px;
+    }
+  }
+}
+
+.guide__number7 {
+  margin-bottom: 60px;
+
+  @media screen and (max-width: 750px) {
+    margin-bottom: 70px;
+  }
+
+  &::after {
+    height: 64px;
+    bottom: -64px;
+
+    @media screen and (max-width: 750px) {
+      height: 95px;
+      bottom: -95px;
+    }
+  }
+}
+
+.guide__number8{
+  margin-bottom: 60px;
+
+  &::after {
+    display: none;
+  }
+}
+
+
+/*------------------------*/
+
+.guide__text__title {
+  font-size: 2.8rem;
+  color: $color-green;
+  font-weight: bold;
+
+  @media screen and (max-width: 750px) {
+    font-size: 1.5rem;
+  }
+}
+
+.guide__text {
+  font-size: 1.8rem;
+  margin-top: 5px;
+
+  @media screen and (max-width: 750px) {
+    font-size: 1.4rem;
+  }
+}
+
+/*--- footer --------*/
+@import "footer.scss";

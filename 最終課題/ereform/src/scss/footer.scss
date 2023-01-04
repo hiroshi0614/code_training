@@ -1,8 +1,13 @@
+/*--- color --------*/
+@import "color";
+
+/*--- footer --------*/
 
 #page__top {
   position: fixed;
   right: 20px;
   bottom: 45px;
+  z-index: 999;
 
   @media screen and (max-width: 750px) {
     width: 45px;
@@ -12,7 +17,7 @@
   }
 }
 
-.top__btn__sp {
+#top__btn {
   display: none;
 
   @media screen and (max-width: 750px) {
@@ -21,6 +26,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
+    z-index: 999;
   }
 }
 
@@ -43,8 +49,7 @@
 .btn__text__wrap {
   display: block;
   height: 55px;
-  color: #fff;
-  z-index: 999;
+  color: $color-white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,14 +84,14 @@
 }
 
 .btn__body__mail {
-  background-color: #e01212;
+  background-color: $color-red;
   border-radius: 3px 3px 0 0;
 }
 
 
 .footer__wrap {
-  background-color: #0f6b55;
-  color: #fff;
+  background-color: $color-green;
+  color: $color-white;
   letter-spacing: 2px;
   padding: 0 16px;
 
@@ -114,7 +119,7 @@ font-size: 1.4rem;
   width: 120px;
   height: 28px;
   line-height: 28px;
-  background-color: #fff;
+  background-color: $color-white;
   color: #333;
   border-radius: 10px;
   text-align: center;
@@ -157,7 +162,7 @@ font-size: 1.4rem;
     display: block;
     display: flex;
     padding: 30px 0 25px 0;
-    border-top: solid 1px #fff;
+    border-top: solid 1px $color-white;
 
     ul {
       width: 50%;
@@ -172,10 +177,14 @@ font-size: 1.4rem;
 }
 
 .footer__nav__arrow {
-  color: #fff;
+  color: $color-white;
   display: flex;
   align-items: center;
   transition: all .3s;
+
+  span {
+    width: 80%;
+  }
 
   &::before {
     content: "";
@@ -219,13 +228,19 @@ font-size: 1.4rem;
 
 .copyright__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 15px;
 
-
   li {
-    padding: 0 15px;
-    border-right: 1px solid #333;
+    padding: 0 0 0 10px;
+    letter-spacing: 1px;
+    line-height: 2;
+
+    &::after {
+      content: "|";
+      margin: 0 5px 0 10px;
+    }
 
     &:last-child {
       border: none;

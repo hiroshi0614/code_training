@@ -7,13 +7,6 @@
 @import "header.scss";
 
 /*--- main --------*/
-.main {
-  padding-top: 147px;
-
-  @media screen and (max-width: 750px) {
-    padding-top: 37px;
-  }
-}
 
 .mainVisual {
   position: relative;
@@ -23,7 +16,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: $color-white;
   width: 1440px;
   height: 810px;
   z-index: 6;
@@ -49,7 +42,7 @@
 @import "slick.scss";
 
 .news {
-  background-color: #fffef3;
+  background-color: $color-cream;
   margin-top: 200px;
   padding: 0 16px;
 
@@ -67,7 +60,7 @@
 .news__list {
   display: flex;
   flex-wrap: wrap;
-  color: #0f6b55;
+  color: $color-green;
   font-size: 1.6rem;
   letter-spacing: 2px;
   margin-top: 20px;
@@ -88,6 +81,7 @@
 
     @media screen and (max-width: 750px) {
       width: 100%;
+      margin-right: 0;
     }
 
     &:first-child {
@@ -98,6 +92,11 @@
   dd {
     width: 75%;
     margin-top: 25px;
+    transition: all .3s;
+
+    &:hover {
+      opacity: .7;
+    }
 
     @media screen and (max-width: 750px) {
       width: 100%;
@@ -113,7 +112,7 @@
     }
 
     a{
-      color: #0f6b55;
+      color: $color-green;
       text-decoration: underline;
     }
   }
@@ -129,8 +128,8 @@
     padding: 0 60px;
     height: 55px;
     line-height: 55px;
-    background-color: #0f6b55;
-    color: #fffef3;
+    background-color: $color-green;
+    color: $color-cream;
     font-size: 2rem;
     font-weight: bold;
     border-radius: 5px;
@@ -177,8 +176,8 @@
     height: 13px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-    border-right: #0f6b55 3px solid;
-    border-top: #0f6b55 3px solid;
+    border-right: $color-green 3px solid;
+    border-top: $color-green 3px solid;
     transition: all .4s;
     z-index: 5;
   }
@@ -211,7 +210,7 @@
     content: "";
     width: 6px;
     height: 30px;
-    background-color: #0f6b55;
+    background-color: $color-green;
     position: absolute;
     left: 15px;
     bottom: 4px;
@@ -240,14 +239,14 @@
   }
 }
 
-/*--- example -------*/
+/*--- works -------*/
 
-.example {
-  background-color: #fffef3;
+.works {
+  background-color: $color-cream;
   padding: 40px 0;
 }
 
-.example__inner {
+.works__inner {
   margin-top: 40px;
 
   @media screen and (max-width: 750px) {
@@ -256,24 +255,24 @@
   }
 }
 
-.example__item {
+.works__item {
   position: relative;
 }
 
 @media screen and (max-width: 750px) {
-  .example__item__sp {
+  .works__item__sp {
     display: none;
   }
 }
 
-.example__box {
+.works__box {
   position: relative;
   overflow: hidden;
   display: block;
   padding-top: 62.5%;
 }
 
-.example__box__img {
+.works__box__img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -291,36 +290,36 @@
   }
 }
 
-.example__img1 {
-  background-image: url(../img/category/example1.jpg);
+.works__img1 {
+  background-image: url(../img/category/works1.jpg);
 }
 
-.example__img2 {
-  background-image: url(../img/category/example2.jpg);
+.works__img2 {
+  background-image: url(../img/category/works2.jpg);
 }
 
-.example__img3 {
-  background-image: url(../img/category/example3.jpg);
+.works__img3 {
+  background-image: url(../img/category/works3.jpg);
 }
 
-.example__img4 {
-  background-image: url(../img/category/example4.jpg);
+.works__img4 {
+  background-image: url(../img/category/works4.jpg);
 }
 
-.example__img5 {
-  background-image: url(../img/category/example5.jpg);
+.works__img5 {
+  background-image: url(../img/category/works5.jpg);
 }
 
-.example__img6 {
-  background-image: url(../img/category/example6.jpg);
+.works__img6 {
+  background-image: url(../img/category/works6.jpg);
 }
 
 
-.example__text {
+.works__text {
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: $color-white;
   height: 190px;
   padding: 15px 20px;
   letter-spacing: 2px;
@@ -331,7 +330,7 @@
   }
 }
 
-.example__category {
+.works__category {
   position: absolute;
   top: 0;
   left: 0;
@@ -341,19 +340,19 @@
   height: 30px;
   line-height: 30px;
   text-align: center;
-  background-color: #e01212;
+  background-color: $color-red;
   display: inline-block;
-  color: #fff;
+  color: $color-white;
   letter-spacing: 1px;
 }
 
 @media screen and (max-width: 750px) {
-  .example__list__pc {
+  .works__list__pc {
     display: none;
   }
 }
 
-.example__list__sp {
+.works__list__sp {
   display: none;
 
   @media screen and (max-width: 750px) {
@@ -361,13 +360,13 @@
   }
 }
 
-.example__btn {
+.works__btn {
   display: block;
   margin-top: 60px;
   text-align: center;
 }
 
-.example__btn__body {
+.works__btn__body {
   display: inline-block;
 
   a {
@@ -375,8 +374,8 @@
   padding: 0 60px;
   height: 55px;
   line-height: 55px;
-  background-color: #0f6b55;
-  color: #fffef3;
+  background-color: $color-green;
+  color: $color-cream;
   font-size: 2rem;
   font-weight: bold;
   border-radius: 5px;

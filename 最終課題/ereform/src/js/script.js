@@ -36,6 +36,29 @@ jQuery(function() {
   });
 });
 
+/*--- 無料相談 ---------*/
+
+$(function() {
+  var topBtn = $('#top__btn');
+  topBtn.hide();  
+  //スマホ時にスクロールが600に達したらボタン表示
+  var windowWidth = $(window).width();
+  var windowSm = 750;
+  if (windowWidth <= windowSm) {
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 700) {
+      //ボタンの表示方法
+          topBtn.fadeIn();
+      } else {
+      //ボタンの非表示方法
+          topBtn.fadeOut();
+      }
+  });
+  } else {
+    topBtn.hide();
+  }
+});
+
 /*--- slickスライドショー　------*/
 $(function () {
   // メイン画像のオプション
@@ -50,3 +73,17 @@ $(function () {
   });
 });
 
+/*--- スムーススクロール　-------*/
+$(function(){
+    // スムーススクロール
+  $('a[href^="#"]').click(function () {
+    // ヘッダーの高さを事前に取得
+  var adjust = -150
+  var speed = 1000;
+  var href = $(this).attr("href");
+  var target = $(href == "#" || href == "" ? 'html' : href);
+  var position = target.offset().top + adjust;
+  $('body,html').animate({ scrollTop: position }, speed, 'swing');
+  return false;
+  });
+});
