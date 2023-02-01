@@ -1,11 +1,9 @@
-@import "color.scss";
-
 /*-------------------------ベースグループ-------------------*/
 
 * {
   margin: 0;
   padding: 0;
-  }
+}
   html {
     font-family: "Noto Sans JP",sans-serif;
   }
@@ -149,6 +147,21 @@
     margin-left: 40px;
   }
 
+  .fw-bold {
+    font-weight: bold;
+  }
+
+  .border-none {
+    border: none;
+  }
+
+
+  /*--- お役立ちカテゴリの火災保険 改行時の余白設定 ---*/
+  .pt-0 {
+    @media screen and (max-width: 1044px) {
+      padding-top: 3px;
+    }
+  }
 
   
   /*--- 共通 --------*/
@@ -159,7 +172,7 @@
   
   .subtitle {
     text-align: center;
-    color: $color-green;
+    color: #0f6b55;
     font-size: 2.4rem;
     letter-spacing: 4px;
     line-height: 1.5;
@@ -170,7 +183,7 @@
   }
 
   .link__text {
-    color: $color-green;
+    color: #0f6b55;
     text-decoration: underline;
     transition: all .3s;
 
@@ -183,7 +196,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 40px;
 
   @media screen and (max-width: 750px) {
     flex-direction: column;
@@ -252,7 +264,7 @@
 }
 
 .related__wrap {
-  background-color: $color-white;
+  background-color: #fff;
   padding: 55px 30px 20px 30px;
 
   @media screen and (max-width: 750px) {
@@ -309,10 +321,10 @@
 }
 
 .category__tag {
-  background-color: $color-green;
+  background-color: #0f6b55;
   height: 30px;
   line-height: 30px;
-  color: $color-white;
+  color: #fff;
   font-weight: bold;
   padding: 0 5px;
   font-size: 1.4rem;
@@ -342,8 +354,8 @@
   font-size: 2.2rem;
   padding: 15px 20px;
   margin-top: 50px;
-  color: $color-white;
-  background-color: $color-green;
+  color: #fff;
+  background-color: #0f6b55;
   letter-spacing: 2px;
 
   @media screen and (max-width: 750px) {
@@ -353,11 +365,11 @@
 }
 
 .heading3 {
-  color: $color-green;
+  color: #0f6b55;
   font-size: 2rem;
   margin-top: 50px;
   padding-bottom: 5px;
-  border-bottom: 1px solid $color-green;
+  border-bottom: 1px solid #0f6b55;
   letter-spacing: 2px;
 
   @media screen and (max-width: 750px) {
@@ -369,9 +381,9 @@
   padding: 5px 0 5px 10px;
   font-size: 1.8rem;
   font-weight: bold;
-  color: $color-green;
+  color: #0f6b55;
   margin-top: 50px;
-  border-left: 2px solid $color-green;
+  border-left: 2px solid #0f6b55;
 
   @media screen and (max-width: 750px) {
     font-size: 1.7rem;
@@ -384,7 +396,7 @@
 }
 
 .marker {
-  background: linear-gradient(transparent 55%, $color-yellow 60%);
+  background: linear-gradient(transparent 55%, #F7FF01 60%);
   display: inline;
   font-weight: bold;
 }
@@ -396,7 +408,7 @@
 
 /*--- column2__wrap  -------*/
 .column2__wrap {
-  background-color: $color-gray;
+  background-color: #fbfbfb;
   padding: 20px 0 0 0;
 }
 
@@ -420,7 +432,7 @@
 }
 
 .column2__left__body {
-  background-color: $color-white;
+  background-color: #fff;
   padding-bottom: 20px;
 
   a {
@@ -434,20 +446,16 @@
 }
 
 .column__list {
-  padding: 20px 25px 10px;
+  padding: 20px 20px 10px;
 
   @media screen and (max-width: 750px) {
     padding: 10px 10px;
   }
 }
 
-.column__list+li {
-  border-top: 1px solid $border-gray;
-}
-
 /*--- column1__wrap --------*/
 .column1__wrap {
-  background-color: $color-gray;
+  background-color: #fbfbfb;
   padding: 40px 0;
 
   @media screen and (max-width: 750px) {
@@ -456,7 +464,7 @@
 }
 
 .column1__body {
-  background-color: $color-white;
+  background-color: #fff;
   padding: 15px 20px;
 
   @media screen and (max-width: 750px) {
@@ -467,7 +475,7 @@
 /*--- reason --------*/
 
 .reason {
-  background-color: $color-gray;
+  background-color: #fbfbfb;
 }
 
 .reason__wrap{
@@ -506,12 +514,12 @@
 .triangle {
   margin: 0 auto;
   width: 0;
-  border-top: 100px solid $color-red;
+  border-top: 100px solid #e01212;
   border-left: 175px solid transparent;
   border-right: 175px solid transparent;
 
   @media screen and (max-width: 750px) {
-    border-top: 60px solid $color-red;
+    border-top: 60px solid #e01212;
     border-left: 120px solid transparent;
     border-right: 120px solid transparent;
   }
@@ -520,6 +528,7 @@
 .free__window {
   display: flex;
   justify-content: space-between;
+  padding: 0 16px;
 
   @media screen and (max-width: 750px) {
     flex-direction: column;
@@ -608,11 +617,11 @@
 }
 
 .window__btn__w {
-  border: 1px solid $color-green;
-  color: $color-green;
+  border: 1px solid #0f6b55;
+  color: #0f6b55;
 }
 
 .window__btn__r {
-  background-color: $color-red;
-  color: $color-white;
+  background-color: #e01212;
+  color: #fff;
 }

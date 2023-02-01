@@ -1,6 +1,3 @@
-/*--- color ---------*/
-@import "color.scss";
-
 /*--- column2__right --------*/
 
 .column2__right {
@@ -13,7 +10,7 @@
 }
 
 .right__column__list {
-  background-color: $color-white;
+  background-color: #fff;
   padding: 20px 10px;
 }
 
@@ -21,7 +18,7 @@
 
   li {
     padding: 10px 0;
-    border-top: 1px solid $border-gray;
+    border-top: 1px solid #e2e2e2;
     letter-spacing: 2px;
     transition: all .4s;
   }
@@ -49,7 +46,7 @@
 }
 
 .right__column__title {
-  color: $color-green;
+  color: #0f6b55;
   font-size: 1.7rem;
   display: flex;
   align-items: center;
@@ -65,7 +62,7 @@
 }
 
 .category__body {
-  border-top : 1px solid $border-gray;
+  border-top : 1px solid #e2e2e2;
 
   li {
     margin-top: 15px;
@@ -82,6 +79,10 @@
   }
 }
 
+.info__img__aside {
+  width: 100%;
+}
+
 .category__text {
   position: absolute;
   bottom: 0;
@@ -92,9 +93,13 @@
   font-size: 1.2rem;
   font-weight: bold;
   height: 30px;
-  line-height: 30px;
+  padding-top: 7px;
   padding-left: 25px;
   z-index: 0;
+
+  @media screen and (max-width: 960px) {
+    font-size: 1vw;
+  }
 
   @media screen and (max-width: 750px) {
     font-size: 1.4rem;
@@ -106,7 +111,7 @@
     content: "";
     width: 4px;
     height: 70%;
-    background-color: $color-green;
+    background-color: #0f6b55;
     position: absolute;
     left: 15px;
     bottom: 4px;
@@ -128,19 +133,48 @@
     height: 12px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-    border-right: $color-green 3px solid;
-    border-top: $color-green 3px solid;
+    border-right: #0f6b55 3px solid;
+    border-top: #0f6b55 3px solid;
     transition: all .4s;
   }
 }
 
 .ranking__body {
-  border-top : 1px solid $border-gray;
+  border-top : 1px solid #e2e2e2;
 
   li {
     padding: 20px 0;
   }
+
+  li:nth-child(1) .ranking__img::before {
+    background-image: url(../img/icon/rank1.svg);
+  }
+
+  li:nth-child(2) .ranking__img::before {
+    background-image: url(../img/icon/rank2.svg);
+  }
+
+  li:nth-child(3) .ranking__img::before {
+    background-image: url(../img/icon/rank3.svg);
+  }
+
+  li:nth-child(1) .ranking__img::before ,
+  li:nth-child(2) .ranking__img::before ,
+  li:nth-child(3) .ranking__img::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+  
+    @media screen and (max-width: 750px) {
+      top: -15px;
+    }
+  }
 }
+
+
 
 .ranking__item {
   display: flex;
@@ -157,18 +191,7 @@
   flex-basis: 100px;
   height: auto;
   margin-right: 10px;
-}
-
-.rank__icon {
-  position: absolute;
-  top: -5px;
-  left: -15px;
-  width: 40px;
-  height: 40px;
-
-  @media screen and (max-width: 750px) {
-    top: -15px;
-  }
+  position: relative;
 }
 
 .ranking__text__body {

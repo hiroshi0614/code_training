@@ -1,12 +1,4 @@
-@charset "UTF-8";
-
-/*--- common --------*/
-@import "common.scss";
-
-/*--- header ---------*/
-@import "header.scss";
-
-.column2__left__body {
+.blog__content-wrap {
   padding: 30px 20px;
 
   @media screen and (max-width: 750px) {
@@ -21,8 +13,6 @@
     width: 100%;
   }
 }
-
-
 
 
 .table {
@@ -188,7 +178,7 @@
 .card__text {
   width: 75%;
   font-size: 1.4rem;
-  color: $card-text;
+  color: #8c8f94;
 
   @media screen and (max-width: 750px) {
     width: 70%;
@@ -206,7 +196,7 @@
 
   a {
     font-size: 1.4rem;
-    color: $card-text;
+    color: #8c8f94;
   }
 }
 
@@ -251,9 +241,3 @@
   font-size: 1.6rem;
   margin-top: 20px;
 }
-
-/*--- aside ------*/
-@import "aside.scss";
-
-/*--- footer --------*/
-@import "footer.scss";

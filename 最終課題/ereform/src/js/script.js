@@ -1,12 +1,12 @@
-/*--- mainvisual --------*/
-$(function() {
-	setTimeout(function(){
-		$('.main__img__pc' , '.main__img__sp').fadeIn(1600);
-	},50); //画像をフェードイン!
-	setTimeout(function(){
-		$('.main__bg').fadeOut(500);
-	},50); //真っ白背景をフェードアウト！
-});
+// /*--- mainvisual --------*/
+// $(function() {
+// 	setTimeout(function(){
+// 		$('.main__img__pc' , '.main__img__sp').fadeIn(1600);
+// 	},50); //画像をフェードイン!
+// 	setTimeout(function(){
+// 		$('.main__bg').fadeOut(500);
+// 	},50); //真っ白背景をフェードアウト！
+// });
 
 /*--- ハンバーガーメニュー　---------*/
 const ham = $('#js__hamburger');
@@ -40,23 +40,15 @@ jQuery(function() {
 
 $(function() {
   var topBtn = $('#top__btn');
-  topBtn.hide();  
+  topBtn.hide();
   //スマホ時にスクロールが600に達したらボタン表示
-  var windowWidth = $(window).width();
-  var windowSm = 750;
-  if (windowWidth <= windowSm) {
-  $(window).scroll(function () {
-      if ($(this).scrollTop() > 700) {
-      //ボタンの表示方法
-          topBtn.fadeIn();
-      } else {
-      //ボタンの非表示方法
-          topBtn.fadeOut();
-      }
+  $(window).scroll(function() {
+    if ($(window).scrollTop() < 600) {
+      topBtn.fadeOut();
+    } else {
+      topBtn.fadeIn();
+    }
   });
-  } else {
-    topBtn.hide();
-  }
 });
 
 /*--- slickスライドショー　------*/

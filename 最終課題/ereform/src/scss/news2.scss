@@ -1,53 +1,13 @@
-@charset "UTF-8";
-
-/*--- common --------*/
-@import "common.scss";
-
-/*--- header ---------*/
-@import "header.scss";
-
-.news__list__text{
-  display: block;
-  font-size: 1.8rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-top: 20px;
-
-  @media screen and (max-width: 750px) {
-    font-size: 1.4rem;
-
-    &:first-child {
-      margin-top: 10px;
-    }
-  }
-}
-
-.news__list__date {
-  font-size: 1.4rem;
-  margin-top: 10px;
-  letter-spacing: 1px;
-
-  @media screen and (max-width: 750px) {
-    font-size: 1.2rem;
-  }
-}
-
-.pagenation {
-  width: 100%;
-  margin: 0 auto;
-  margin: 40px 0;
-}
-
-.pagenation__list {
+.pagenation__list__secondary {
   display: flex;
   justify-content: center;
 
   li {
     width: 30px;
     height: 30px;
-    border: 1px solid $color-green;
-    background-color: $color-white;
-    color: $color-white;
+    border: 1px solid #0f6b55;
+    background-color: #fff;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,14 +17,14 @@
     transition: all .4s;
 
     &:hover {
-      background-color: $color-green;
-      color: $color-white;
+      background-color: #0f6b55;
+      color: #fff;
     }
   }
 
   li+li {
     margin-left: 20px;
-    background-color: $color-green;
+    background-color: #0f6b55;
 
 
   }
@@ -74,13 +34,7 @@
     text-align: center;
 
     &:hover {
-      color: $color-white;
+      color: #fff;
     }
   }
 }
-
-/*--- aside -------*/
-@import "aside.scss";
-
-/*--- footer --------*/
-@import "footer.scss";

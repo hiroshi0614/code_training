@@ -1,12 +1,4 @@
-@charset "UTF-8";
-
-/*--- common --------*/
-@import "common.scss";
-
-/*--- header ---------*/
-@import "header.scss";
-
-.column2__left__body li{
+.blog__column__list {
   padding:  0 10px;
 
   a {
@@ -14,10 +6,14 @@
   }
 }
 
+.blog__column__list + li .column__list__inner {
+  border-top: 1px solid #e2e2e2;
+}
+
 .column__list__inner {
   display: flex;
-  align-items: center;
   padding: 30px 0;
+  margin: 0 10px;
 
   @media screen and (max-width: 750px) {
     padding: 15px 0;
@@ -38,7 +34,7 @@
 }
 
 .blog__list__title {
-  color: $color-green;
+  color: #0f6b55;
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -85,9 +81,9 @@
   li {
     width: 30px;
     height: 30px;
-    border: 1px solid $color-green;
-    background-color: $color-green;
-    color: $color-white;
+    border: 1px solid #0f6b55;
+    background-color: #0f6b55;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,11 +95,11 @@
 
   li+li {
     margin-left: 20px;
-    background-color: $color-white;
+    background-color: #fff;
 
     &:hover {
-      background-color: $color-green;
-      color: $color-white;
+      background-color: #0f6b55;
+      color: #fff;
     }
   }
 
@@ -112,13 +108,7 @@
     text-align: center;
 
     &:hover {
-      color: $color-white;
+      color: #fff;
     }
   }
 }
-
-/*--- aside ------*/
-@import "aside.scss";
-
-/*--- footer --------*/
-@import "footer.scss";

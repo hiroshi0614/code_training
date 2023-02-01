@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name=”description” content=”群馬県内を中心に展開する住宅のリフォーム会社「eリフォーム」！住宅リフォーム、火災保険など住まいに関わるお悩みを解決します！お気軽にご相談ください。” />
+  <meta name="description” content="群馬県内を中心に展開する住宅のリフォーム会社「eリフォーム」！住宅リフォーム、火災保険など住まいに関わるお悩みを解決します！お気軽にご相談ください。">
   <meta name="keywords" content="屋根塗装,外壁塗装,外壁サイディング,屋根塗装,屋根カバー工法,eリフォーム,群馬県,高崎市,前橋市,関東">
   <!--- OGP -------->
   <meta property="og:url" content="http://max0721.html.xdomain.jp/e-reform2022/estimate.html">
@@ -17,11 +17,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Roboto:wght@700&display=swap" rel="stylesheet">
   <link rel="icon" href="img/common/favicon.ico" id="favicon">
-  <link rel="stylesheet" href="min.css/sanitize.min.css">
-  <link rel="stylesheet" href="min.css/estimate.min.css">
+  <link rel="stylesheet" href="css/sanitize.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <title>無料相談窓口 - 群馬県内の外装リフォーム専門店『eリフォーム』</title>
 </head>
+<body>
   <!--- header -------->
   <header class="header">
 
@@ -127,66 +128,88 @@
         <div class="form">
           <div class="form__wrap">
 
-            <div class="form__item">
-              <p class="form__item__label">
-                <span class="form__item__label__required required__red">必須</span>お名前
-              </p>
-              <input type="name" class="form__item__input" placeholder="例）山田　太郎" autocomplete="name" />
-            </div>
+            <table>
+              <tbody>
 
-            <div class="form__item">
-              <p class="form__item__label">
-                <span class="form__item__label__required required__black">任意</span>電話番号
-              </p>
-              <input type="tel" class="form__item__input" placeholder="例）000-0000-0000" autocomplete="tel" />
-            </div>
+                <tr class="form__item">
+                  <th class="form__item__label">
+                    <span class="form__item__label__required required__red">必須</span>お名前
+                  </th>
+                  <td>
+                    <input type="name" name="name" class="form__item__input" placeholder="例）山田　太郎" autocomplete="name" />
+                  </td>
+                </tr>
 
-            <div class="form__item">
-              <p class="form__item__label">
-                <span class="form__item__label__required required__red">必須</span>メールアドレス
-              </p>
-              <input type="email" class="form__item__input" placeholder="例) you@example.com" autocomplete="email">
-            </div>
+                <tr class="form__item">
+                  <th class="form__item__label">
+                    <span class="form__item__label__required required__black">任意</span>電話番号
+                  </th>
+                  <td>
+                    <input type="tel" name="tel" class="form__item__input" placeholder="例）000-0000-0000" autocomplete="tel" />
+                  </td>
+                </tr>
 
-            <div class="form__item">
-              <p class="form__item__label">
-                <span class="form__item__label__required required__black">任意</span>郵便番号
-              </p>
-              <input type="text" class="form__item__input" name="postal-code" placeholder="例）〒000-0000" autocomplete="postal-code" />
-            </div>
+                <tr class="form__item">
+                  <th class="form__item__label">
+                    <span class="form__item__label__required required__red">必須</span>メールアドレス
+                  </th>
+                  <td>
+                    <input type="email" name="mail" class="form__item__input" placeholder="例) you@example.com" autocomplete="email">
+                  </td>
+                </tr>
 
-            <div class="form__item">
-              <p class="form__item__label">
-                <span class="form__item__label__required required__red">必須</span>都道府県/市区町村
-              </p>
-              <input type="text" class="form__item__input" placeholder="例）東京都" autocomplete="address-level1">
-            </div>
+                <tr class="form__item">
+                  <th class="form__item__label">
+                    <span class="form__item__label__required required__black">任意</span>郵便番号
+                  </th>
+                  <td>
+                    <input type="text" name="postal-code" class="form__item__input" name="postal-code" placeholder="例）〒000-0000" autocomplete="postal-code" />
+                  </td>
+                </tr>
 
-            <div class="form__item">
-              <p class="form__item__label">
-                <span class="form__item__label__required required__black">任意</span>番地以降
-              </p>
-              <input type="text" class="form__item__input" placeholder="例 ◯-◯◯-◯">
-            </div>
+                <tr class="form__item">
+                  <th class="form__item__label">
+                    <span class="form__item__label__required required__red">必須</span>都道府県/市区町村
+                  </th>
+                  <td>
+                    <input type="text" name="city" class="form__item__input" placeholder="例）東京都" autocomplete="address-level1">
+                  </td>
+                </tr>
 
-            <div class="form__item">
-              <p class="form__item__label">
-                <span class="form__item__label__required required__red">必須</span>お問い合わせの種類
-              </p>
-              <select name="example" class="form__select form__item__input">
-                <option value="選択してください" selected="selected">選択してください</option>
-                <option value="リフォームのご相談">リフォームのご相談</option>
-                <option value="見積もりのご相談">見積もりのご相談</option>
-                <option value="その他">その他</option>
-              </select>
-            </div>
+                <tr class="form__item">
+                  <th class="form__item__label">
+                    <span class="form__item__label__required required__black">任意</span>番地以降
+                  </th>
+                  <td>
+                    <input type="text" name="address" class="form__item__input" placeholder="例 ◯-◯◯-◯">
+                  </td>
+                </tr>
 
-            <div class="form__item mt-10">
-              <p class="form__item__label isMsg">
-                <span class="form__item__label__required required__black">任意</span>内容の詳細
-              </p>
-              <textarea class="form__item__textarea"></textarea>
-            </div>
+                <tr class="form__item">
+                  <th class="form__item__label">
+                    <span class="form__item__label__required required__red">必須</span>お問い合わせの種類
+                  </th>
+                  <td>
+                    <select name="example" class="form__select form__item__input">
+                      <option value="選択してください" selected="selected">選択してください</option>
+                      <option value="リフォームのご相談">リフォームのご相談</option>
+                      <option value="見積もりのご相談">見積もりのご相談</option>
+                      <option value="その他">その他</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr class="form__item mt-10">
+                  <th class="form__item__label isMsg">
+                    <span class="form__item__label__required required__black">任意</span>内容の詳細
+                  </th>
+                  <td>
+                    <textarea name="content" class="form__item__textarea"></textarea>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table> 
 
             <div class="privacy__policy mt-40">
               <p><a href="privacy.html" class="link__text">プライバシーポリシー</a>を一読いただいた後、送信してください。</p>
@@ -301,7 +324,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="min.js/script.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
